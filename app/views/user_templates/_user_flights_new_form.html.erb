@@ -1,0 +1,73 @@
+<!-- Form flight start -->
+<form action="/create_flight_from_user" method="post">
+<!-- Form flight end -->
+
+  <!-- Label and input for description start -->
+  <div class="form-group">
+    <label for="description">
+      Description
+    </label>
+
+    <!-- Input for description start -->
+    <input type="text" id="description" name="description" class="form-control" value="<%= @flight.description %>">
+    <!-- Input for description end -->
+  </div>
+  <!-- Label and input for description end -->
+
+  <!-- Label and input for phone_number start -->
+  <div class="form-group">
+    <label for="phone_number">
+      Phone number
+    </label>
+
+    <!-- Input for phone_number start -->
+    <input type="text" id="phone_number" name="phone_number" class="form-control" value="<%= @flight.phone_number %>">
+    <!-- Input for phone_number end -->
+  </div>
+  <!-- Label and input for phone_number end -->
+
+  <!-- Label and input for message_sent start -->
+  <div class="form-group">
+    <label for="message_sent">
+      Message sent
+    </label>
+
+    <!-- Input for message_sent start -->
+    <input type="text" id="message_sent" name="message_sent" class="form-control" value="<%= @flight.message_sent %>">
+    <!-- Input for message_sent end -->
+  </div>
+  <!-- Label and input for message_sent end -->
+
+  <!-- Label and input for user_id start -->
+  <!-- Input for user_id start -->
+  <input type="hidden" name="user_id" value="<%= @user.id %>">
+  <!-- Input for user_id end -->
+
+  <!-- Label and input for departs_at start -->
+  <div class="form-group">
+    <label for="departs_at">
+      Departs at
+    </label>
+
+    <!-- Input for departs_at start -->
+    <input type="text" id="departs_at" name="departs_at" class="form-control" value="<%= @flight.departs_at %>">
+    <!-- Input for departs_at end -->
+  </div>
+  <!-- Label and input for departs_at end -->
+
+  <!-- Label and input for minute_message_sent start -->
+  <div class="form-group">
+    <label for="minute_message_sent">
+      Minute message sent
+    </label>
+
+    <!-- Input for minute_message_sent start -->
+    <input type="text" id="minute_message_sent" name="minute_message_sent" class="form-control" value="<%= @flight.minute_message_sent %>">
+    <!-- Input for minute_message_sent end -->
+  </div>
+  <!-- Label and input for minute_message_sent end -->
+
+  <button class="btn btn-block btn-outline-secondary">
+    Create flight
+  </button>
+</form>
